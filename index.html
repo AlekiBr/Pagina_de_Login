@@ -18,9 +18,37 @@
             <button class="btnLogin popup">Login</button>
         </nav>
     </header>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="senha" required>
+                    <label>Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">
+                        Lembrar de mim</label>
+                        <a href="#">Esqueci minha Senha</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Não tem uma conta ?<a href="#" class="register-link"> Criar conta</a></p>
+                </div>
+            </form>
+        </div>
 
+    </div>
 
     <script src="script.js"></script>
-    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
