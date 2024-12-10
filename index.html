@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X_UA_Compartible" content="Ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Cadastro</title>
     <link rel="stylesheet" href="style.css">
@@ -19,6 +19,7 @@
         </nav>
     </header>
     <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
         <div class="form-box login">
             <h2>Login</h2>
             <form action="#">
@@ -29,7 +30,7 @@
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="senha" required>
+                    <input type="password" required>
                     <label>Senha</label>
                 </div>
                 <div class="remember-forgot">
@@ -44,7 +45,36 @@
                 </div>
             </form>
         </div>
-
+        <div class="form-box register">
+            <h2>Cadastro</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Nome do Usuário</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">
+                        Eu li e aceito os Termos e Condições
+                    </label>
+                </div>
+                <button type="submit" class="btn">Criar Conta</button>
+                <div class="login-register">
+                    <p>Já tem uma conta ?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="script.js"></script>
